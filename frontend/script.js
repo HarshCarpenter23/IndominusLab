@@ -1,3 +1,5 @@
+
+
 document.addEventListener('click', e => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]")
   if(!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
@@ -13,7 +15,7 @@ document.addEventListener('click', e => {
 
     dropdown.classList.remove("active")
   })
-})
+});
 
 const hamburger = document.querySelector(".hamburger");
 const navlinks = document.querySelector(".nav-links");
@@ -21,12 +23,9 @@ const navlinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navlinks.classList.toggle("active");
-})
+});
 
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-//   hamburger.classList.remove("active");
-//   navlinks.classList.remove("active");
-// }))
+
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
